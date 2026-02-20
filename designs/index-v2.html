@@ -61,6 +61,7 @@
             font-size: 1.25rem;
             color: var(--text-muted);
             font-weight: 300;
+            margin-bottom: 2rem;
         }
 
         .grid {
@@ -69,6 +70,41 @@
             gap: 2.5rem;
             width: 100%;
             max-width: 1200px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .nav-link {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+        }
+
+        .nav-link.active {
+            background-color: var(--accent);
+            color: white;
+            border-color: var(--accent);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+        }
+
+        .nav-link.inactive {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #e2e8f0;
+        }
+
+        .nav-link.inactive:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
         .card {
@@ -320,6 +356,10 @@
     <header>
         <h1>Design Previews</h1>
         <p class="subtitle">Explore our dynamic collection of landing page variations and UI concepts.</p>
+        <div class="nav-links">
+            <a href="#" class="nav-link active">List View</a>
+            <a href="../index.html" class="nav-link inactive">Live Previews</a>
+        </div>
     </header>
 
     <div class="controls">
@@ -346,6 +386,36 @@
         // Simply add new objects here when new html pages are created.
         const pages = [
             {
+                url: "hero-v1.html",
+                title: "Hero v1",
+                badge: "Hero",
+                description: "Hero section layout."
+            },
+            {
+                url: "about-v1.html",
+                title: "About Us v1",
+                badge: "About",
+                description: "Company information and team details page layout."
+            },
+            {
+                url: "about-v2.html",
+                title: "About Us v2",
+                badge: "About",
+                description: "Company information and team details page layout."
+            },
+            {
+                url: "who-can-apply-v1.html",
+                title: "who can apply v1",
+                badge: "Who can apply",
+                description: "Who can apply page layout."
+            },
+            {
+                url: "our_courses-v1.html",
+                title: "Our Courses v1",
+                badge: "Courses",
+                description: "Listing page for available courses and educational offerings."
+            },
+            {
                 url: "landing-page-v1.html",
                 title: "Version 1",
                 badge: "V1",
@@ -366,27 +436,15 @@
             {
                 url: "landing-page-v5.html",
                 title: "Version 5",
-                badge: "V5",
+                badge: "final design 0 - V5",
                 description: "Advanced layout with rich features and comprehensive spacing."
             },
             {
                 url: "landing-page-v6.html",
-                title: "Version 6",
-                badge: "V6",
+                title: "Version 6(industry & cources)",
+                badge: "final design 1 -v6",
                 description: "Highly polished version featuring interactive elements and modern flair."
             },
-            {
-                url: "about-v1.html",
-                title: "About Us",
-                badge: "About",
-                description: "Company information and team details page layout."
-            },
-            {
-                url: "our_coursec-v1.html",
-                title: "Our Courses",
-                badge: "Courses",
-                description: "Listing page for available courses and educational offerings."
-            }
         ];
 
         const gridContainer = document.getElementById('gridContainer');

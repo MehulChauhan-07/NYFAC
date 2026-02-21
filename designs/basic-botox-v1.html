@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Basic BOTOX® &amp; Dermal Filler Certification | Aesthetics Academy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d49735", // Gold
+                        "navy": "#0f172a",    // Professional Navy
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#201b12",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-navy dark:text-slate-100 antialiased">
+    <!-- Top Navigation -->
+    <header
+        class="sticky top-0 z-50 w-full bg-white/80 dark:bg-navy/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="bg-navy dark:bg-primary p-2 rounded-lg">
+                        <span
+                            class="material-symbols-outlined text-white dark:text-navy text-2xl">medical_services</span>
+                    </div>
+                    <span class="text-navy dark:text-white text-xl font-bold tracking-tight">Aesthetics Academy</span>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Courses</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Hands-On</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Certification</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="hidden sm:block text-sm font-bold text-navy dark:text-white px-4 py-2 hover:opacity-70">Login</button>
+                    <button
+                        class="bg-primary text-navy text-sm font-bold px-6 py-2.5 rounded-lg hover:brightness-110 transition-all shadow-sm">
+                        Register
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative w-full min-h-[70vh] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-navy/60 z-10"></div>
+                <img alt="Professional medical clinic" class="w-full h-full object-cover"
+                    data-alt="Modern clinical treatment room interior with medical equipment"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8hptu6trssX9LINt61qLuzARTdS5LF9Avtmkz1JC6vH1gWiPVjZ29rEa2V2ha6C7AGXQRna_3BGfqoIriNvYvoejWTXWbyjcQH3j4NljhpnM2oSYw1NWASHK582qfIh77y1hU5Lmh2A8idEF3QyJheKD4z5725TxvAtmg3Fnn5JDwKQ5-Fb9xL-wWoPk744kJpyxjGx6ycQyb7226vzo7uoSLiAjzOXN-P7OOOuY4RrJzMpiRLTYP2y_W2zSRu8BlVeJMAhwSgSQv" />
+            </div>
+            <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+                <div class="max-w-3xl">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary mb-6">
+                        <span class="material-symbols-outlined text-sm">verified_user</span>
+                        <span class="text-xs font-bold uppercase tracking-wider">Accredited Certification</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
+                        Basic BOTOX® &amp; <span class="text-primary">Dermal Filler</span> Certification
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed">
+                        Master the art of facial aesthetics. Comprehensive clinical training designed exclusively for
+                        licensed medical professionals entering the world of injectables.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-primary text-navy font-bold px-8 py-4 rounded-xl hover:scale-[1.02] transition-transform flex items-center justify-center gap-2">
+                            Reserve Your Spot <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                        <button
+                            class="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold px-8 py-4 rounded-xl hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined">download</span> Download Syllabus
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats / Quick Info -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 relative z-30">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+                <div
+                    class="bg-white dark:bg-slate-900 p-8 rounded-t-xl md:rounded-tr-none md:rounded-l-xl border border-slate-200 dark:border-slate-800 shadow-xl flex items-center gap-5">
+                    <div class="p-3 bg-primary/10 rounded-lg text-primary">
+                        <span class="material-symbols-outlined text-3xl">calendar_today</span>
+                    </div>
+                    <div>
+                        <p class="text-slate-500 text-xs font-bold uppercase tracking-widest">Duration</p>
+                        <p class="text-navy dark:text-white text-xl font-bold">1-2 Days Intensive</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-slate-900 p-8 border-x border-slate-200 dark:border-slate-800 shadow-xl flex items-center gap-5">
+                    <div class="p-3 bg-primary/10 rounded-lg text-primary">
+                        <span class="material-symbols-outlined text-3xl">payments</span>
+                    </div>
+                    <div>
+                        <p class="text-slate-500 text-xs font-bold uppercase tracking-widest">Investment</p>
+                        <p class="text-navy dark:text-white text-xl font-bold">$1,499 USD</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-slate-900 p-8 rounded-b-xl md:rounded-bl-none md:rounded-r-xl border border-slate-200 dark:border-slate-800 shadow-xl flex items-center gap-5">
+                    <div class="p-3 bg-primary/10 rounded-lg text-primary">
+                        <span class="material-symbols-outlined text-3xl">workspace_premium</span>
+                    </div>
+                    <div>
+                        <p class="text-slate-500 text-xs font-bold uppercase tracking-widest">Recognition</p>
+                        <p class="text-navy dark:text-white text-xl font-bold">Board Certified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- What You Will Learn -->
+        <section class="py-24 bg-background-light dark:bg-background-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-primary text-sm font-bold uppercase tracking-[0.2em] mb-4">Curriculum Excellence
+                    </h2>
+                    <h3 class="text-3xl md:text-4xl font-black text-navy dark:text-white">What You Will Learn</h3>
+                    <p class="mt-4 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                        Our comprehensive program bridges the gap between clinical theory and aesthetic artistry through
+                        six core modules.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-all shadow-sm hover:shadow-xl">
+                        <div class="mb-6 relative h-48 rounded-xl overflow-hidden">
+                            <img alt="Anatomy study"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Detailed anatomical chart of human facial muscles"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGQANrCqx4tq7B20ldV4v8h2hujmlzuWToQ8tpARiRS3VKQgrF9ARq4G3-NFtbsXJ_R_qXBg5nQ0ecE-qOUc_Ki_GJspIxhk4b8TOAQGmha73L4YK46Iwfq2zdt1AEQL0wcEi1sDnol2ytAYLE6Abp8hO23UjCMX7D1Y4kfPxrwiLBlJW3w4KJySSiuv77jh7i5q3V77KwEdOl8CsvNkYIsuBHF5cWsiVcRrztrBYj3ah_RBL18qgB0wa6WUReV93rDfkijUTKl4tN" />
+                        </div>
+                        <h4 class="text-xl font-bold text-navy dark:text-white mb-3">Facial Anatomy</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Deep dive into musculature, nerve pathways, and vascular danger zones to ensure patient
+                            safety and precision.
+                        </p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-all shadow-sm hover:shadow-xl">
+                        <div class="mb-6 relative h-48 rounded-xl overflow-hidden">
+                            <img alt="Pharmacology"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Vials of medical solution in laboratory setting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZuCabhI_l2KIaHdYQ0_bZHWzhfYx3kta3ZWQHujZFoU4xfMu8W9V2NJzdvfaNUCZ8jmkomHsOyPoLve1v4gjo0AVY8GCXBzWUa6IGFj99pPb2bzhik5LgnhiHc-oMCH3mdmIXz8FXMcHylJ8iC1WhpPQC_ZJ92tqn38MZMSWa5RwK6U5WhrHhyMTdWQE6kZFjlZ0jjzwkMV80_gIsblgAQbSgl4j7Tcb0WzJokD1HHsB2E6QjwjjKIKveEKYd51mhvuXf3psfwLiX" />
+                        </div>
+                        <h4 class="text-xl font-bold text-navy dark:text-white mb-3">Neurotoxin Pharmacology</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Understanding onset, duration, diffusion patterns, and dilution protocols for optimal
+                            product performance.
+                        </p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-all shadow-sm hover:shadow-xl">
+                        <div class="mb-6 relative h-48 rounded-xl overflow-hidden">
+                            <img alt="Upper face treatment"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Doctor performing an injection procedure on a patient"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVuNYk9okGH_T1c4LuxBloOno-BwTgp9r0biX7fnmLxGH64EHciJbOZLfLsbOdB9BK4heWchXo6zSwWzZlcL-vTYC6EiFPlPGMlHjMXaVmPKh2yMQKA3Ncar-B0RB093jyMKKFAB4JfwuLEpTWzuQjQEz3oizDEf7iCCUqMZF6LQvusu3BKWoF_7HS6EUPu9cN5DGJu-8OLOMsNj_OI0wE5e2cKaxuMcBldcYT4OOVaJy4dy9EUMsMalyM-V89ph3Gwl2WN9izZ1Jd" />
+                        </div>
+                        <h4 class="text-xl font-bold text-navy dark:text-white mb-3">Upper Face Techniques</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Mastering the frontalis, glabella, and crow's feet with advanced placement strategies for
+                            natural results.
+                        </p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div
+                        class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-all shadow-sm hover:shadow-xl">
+                        <div class="mb-6 relative h-48 rounded-xl overflow-hidden">
+                            <img alt="Lip enhancement"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Close up of cosmetic enhancement procedure"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBppjvqD5QNTkDJqJBU_MOC2bvrUoy9MfEHv1wwBEhLtXM5LoC5SpjWXpfRKv_qAlpuERmvYZE75PJrZeSHIuK2hFFMyBEUQAo_3RES5KNUVqwvKVROXIwj2OGRDVNQp3dnRPQlzSLsvO1ZmWvCQmYZg1LVWwS-7gHKI2KcGXBCRnzQeNPBqYNNY7V0DTDd51kOCRJ7Im_jDJsH1s2sSFPjHzBtX4-CZaBjYOVPBgfP8bz_YUdyDOtKwf4hMZE06xW0cu2-8nmwHHsl" />
+                        </div>
+                        <h4 class="text-xl font-bold text-navy dark:text-white mb-3">Lip Sculpting</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Techniques for natural volume, border definition, and correcting asymmetry using various
+                            dermal filler types.
+                        </p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div
+                        class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-all shadow-sm hover:shadow-xl">
+                        <div class="mb-6 relative h-48 rounded-xl overflow-hidden">
+                            <img alt="Cheek contouring"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Medical professional examining patient facial structure"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_RB0aN3YuypsLxkvrtovjM5mNiCVgsmgv5SM9_Q6eXH643UoekWc1jtBsgAnO7bXpGDAYXQ54wPVmR8SOcuGik99PuFjERbetMzX_1Iqj-S1itNTbry1Wg5w5_eOv7Hx_cV98JoG9rVvukqDBkauYunbT5TQqFsRa_1FzegOgj_sILgnF8H94wOq2_TYonaEFfLeKNgaA7tUoYlN4kh4CmLacitOAWvXSERuRLC2HgG3aFy1eAwG1qy8IYMQCqEnRECwtx2fE5jGC" />
+                        </div>
+                        <h4 class="text-xl font-bold text-navy dark:text-white mb-3">Mid-Face Rejuvenation</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Contouring and structural support for the malar area to restore youthful volume and lift.
+                        </p>
+                    </div>
+                    <!-- Card 6 -->
+                    <div
+                        class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-all shadow-sm hover:shadow-xl">
+                        <div class="mb-6 relative h-48 rounded-xl overflow-hidden">
+                            <img alt="Safety protocols"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Doctor in sterile environment with medical supplies"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiNQDtWRe7NUQbnZDo4Gj0imuQ5GRqWLghXLF281-p4XNXdRaUxL6u5GNMPBvLRHVoujvXVTkdzYOTJQKHUsivyYoP46chmkwy5VgYoKgpZvg9kORa0BkSXHm7A_gitX425fUYCeSUytAS0UV5dN2xh8hMdH989MJcN_QCFVg4MSqiTXAgFHZ0odSUIeTwExYqTPJBE45Q4pDWXdGXz-9Jsf_OosqLvOYs7AdGBsQQTyNup3z9NXTC4l5Pqt9FDxi5bTnNhpfNDdnc" />
+                        </div>
+                        <h4 class="text-xl font-bold text-navy dark:text-white mb-3">Complication Management</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Critical safety protocols, adverse reaction identification, and emergency response
+                            management (Hyaluronidase).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hands-On Training Highlight -->
+        <section class="py-24 bg-navy text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-primary text-sm font-bold uppercase tracking-[0.2em] mb-4">The Clinical Edge
+                        </h2>
+                        <h3 class="text-3xl md:text-5xl font-black mb-8 leading-tight">
+                            Real-World Practice on <span class="text-primary italic">Live Models</span>
+                        </h3>
+                        <p class="text-slate-300 text-lg mb-10 leading-relaxed">
+                            Don't just watch—perform. Gain the confidence to practice immediately with our intensive
+                            practical sessions. We provide live models for every student, ensuring a transition from
+                            theory to practice that is seamless and safe.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-primary/20 p-2 rounded-lg text-primary">
+                                    <span class="material-symbols-outlined">groups</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-1">Intimate Learning Environment</h4>
+                                    <p class="text-slate-400 text-sm">Small group sizes with a max 10:1
+                                        student-to-instructor ratio for personalized attention.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-primary/20 p-2 rounded-lg text-primary">
+                                    <span class="material-symbols-outlined">clinical_notes</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-1">Expert Supervision</h4>
+                                    <p class="text-slate-400 text-sm">Guided by board-certified aesthetic specialists
+                                        with decades of combined experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="mt-12 bg-primary text-navy font-bold px-10 py-4 rounded-xl hover:brightness-110 transition-all flex items-center gap-2">
+                            View Training Schedule <span class="material-symbols-outlined">calendar_month</span>
+                        </button>
+                    </div>
+                    <div class="lg:w-1/2 relative">
+                        <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+                        <div class="relative rounded-2xl overflow-hidden border-8 border-white/5 shadow-2xl">
+                            <img alt="Live model training" class="w-full aspect-[4/5] object-cover"
+                                data-alt="Medical professional guiding a student during a live procedure"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcBmDZm88nrS3gW3w78fMGBcqRGDiVHoDS4d8Rg6BeHonDl9XT4YpPAf0oTr0lSCWsbBU2mFwLlbagDUCYwt6lhJJoN2rWpWskNhf5vzsquvCHWgktSF7eR93y2szFr-qFBhqoJrHygQp74Fx6n_aA83O2JHaC59YYPvpKz6BSUQeCPdljjhmpl00omsf_hzEc0OSbBgUrrssvYgvZktCflZhGKWv-3NBIr3C6KY6mm0CrQ01iY_8KlZi9N_n0HggWElNuWE3knrTq" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Eligibility Section -->
+        <section class="py-24 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                    <div class="max-w-xl">
+                        <h3 class="text-3xl font-black text-navy dark:text-white mb-4">Professional Eligibility</h3>
+                        <p class="text-slate-600 dark:text-slate-400">
+                            This course is exclusively available to licensed healthcare practitioners in good standing
+                            with their respective boards.
+                        </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="size-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-2">
+                                <span class="material-symbols-outlined text-navy dark:text-primary">stethoscope</span>
+                            </div>
+                            <span class="text-xs font-bold text-slate-500">MD/DO</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="size-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-2">
+                                <span class="material-symbols-outlined text-navy dark:text-primary">dentistry</span>
+                            </div>
+                            <span class="text-xs font-bold text-slate-500">DDS/DMD</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="size-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-2">
+                                <span class="material-symbols-outlined text-navy dark:text-primary">medication</span>
+                            </div>
+                            <span class="text-xs font-bold text-slate-500">NP/PA</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="size-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-2">
+                                <span
+                                    class="material-symbols-outlined text-navy dark:text-primary">health_and_safety</span>
+                            </div>
+                            <span class="text-xs font-bold text-slate-500">RN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary/5 rounded-3xl p-12 border border-primary/10 text-center">
+                    <h4 class="text-2xl font-bold text-navy dark:text-white mb-6">Secure Your Enrollment</h4>
+                    <p class="text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto">
+                        Limited seats available for our next session. Register today to receive your digital pre-course
+                        preparation materials immediately.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <button
+                            class="bg-primary text-navy font-black px-12 py-5 rounded-2xl hover:shadow-lg hover:shadow-primary/20 transition-all text-lg">
+                            Reserve Your Spot Now
+                        </button>
+                        <button
+                            class="bg-navy dark:bg-white text-white dark:text-navy font-black px-12 py-5 rounded-2xl hover:opacity-90 transition-all text-lg">
+                            Download Full Syllabus
+                        </button>
+                    </div>
+                    <p class="mt-8 text-xs font-medium text-slate-500 uppercase tracking-widest">
+                        Next Cohort Starts: October 15, 2024
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-navy text-slate-400 py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="material-symbols-outlined text-primary text-2xl">medical_services</span>
+                        <span class="text-white text-xl font-bold tracking-tight">Aesthetics Academy</span>
+                    </div>
+                    <p class="max-w-xs mb-8">
+                        The gold standard in clinical aesthetic training. Empowering medical professionals to excel in
+                        the art and science of injectable therapies.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-6">Quick Links</h5>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-primary" href="#">Advanced Masterclasses</a></li>
+                        <li><a class="hover:text-primary" href="#">Student Portal</a></li>
+                        <li><a class="hover:text-primary" href="#">Alumni Benefits</a></li>
+                        <li><a class="hover:text-primary" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-6">Contact</h5>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span>
+                            admissions@aestheticsacademy.com</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">phone</span>
+                            +1 (800) 555-0199</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-sm">location_on</span> Beverly Hills, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+                <p>© 2024 Aesthetics Academy. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-white transition-colors" href="#">Instagram</a>
+                    <a class="hover:text-white transition-colors" href="#">LinkedIn</a>
+                    <a class="hover:text-white transition-colors" href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

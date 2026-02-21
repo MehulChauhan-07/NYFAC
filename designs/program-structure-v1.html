@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NYFAF - Program Structure &amp; Learning Format</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d49735",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#201b12",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .timeline-line {
+            background: linear-gradient(90deg, transparent 0%, #d49735 50%, transparent 100%);
+        }
+
+        @media (max-width: 768px) {
+            .timeline-line {
+                background: linear-gradient(180deg, transparent 0%, #d49735 50%, transparent 100%);
+                width: 2px;
+                height: 100%;
+                left: 24px;
+                position: absolute;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Top Navigation Bar -->
+        <header
+            class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80 px-4 md:px-20 py-4">
+            <div class="mx-auto flex max-w-7xl items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">NYFAF</h1>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Programs</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">NYC Training</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Webinars</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">About Us</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2 rounded-lg text-sm font-bold transition-all transform hover:scale-105 active:scale-95">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <!-- Hero Section Style Header -->
+            <section class="mx-auto max-w-7xl px-4 py-12 text-center md:py-20">
+                <span
+                    class="inline-block rounded-full bg-primary/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-primary mb-4">Educational
+                    Journey</span>
+                <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-slate-100 mb-6">
+                    Program Structure &amp; Learning Format</h2>
+                <p class="mx-auto max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+                    A comprehensive three-phase curriculum designed to bridge the gap between theoretical knowledge and
+                    clinical excellence in facial aesthetics.
+                </p>
+            </section>
+            <!-- Timeline Section -->
+            <section class="relative mx-auto max-w-7xl px-4 pb-20">
+                <!-- Desktop Horizontal Line -->
+                <div class="hidden md:block absolute top-[100px] left-0 h-[1px] w-full bg-primary/20 z-0"></div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+                    <!-- Phase 1 -->
+                    <div class="group flex flex-col items-center md:items-start">
+                        <div
+                            class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-background-light dark:bg-background-dark border-4 border-primary/20 group-hover:border-primary transition-colors shadow-xl">
+                            <span class="text-xl font-bold text-primary">1</span>
+                        </div>
+                        <div
+                            class="w-full rounded-xl border border-primary/10 bg-white/50 dark:bg-slate-800/50 p-6 shadow-sm backdrop-blur-sm transition-all hover:shadow-md md:h-full">
+                            <div class="mb-4 flex items-center gap-2 text-primary">
+                                <span class="material-symbols-outlined">laptop_mac</span>
+                                <span class="text-xs font-bold uppercase tracking-widest">Digital Learning</span>
+                            </div>
+                            <h3 class="mb-2 text-xl font-bold text-slate-900 dark:text-slate-100">Phase 1: Didactic
+                                Education</h3>
+                            <p class="mb-4 text-sm font-semibold text-primary">Live Webinar Format - The Foundation</p>
+                            <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                    <span>Fundamentals of Aesthetic Injectables</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                    <span>Advanced Facial Anatomy &amp; Physiology</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                    <span>Comprehensive Patient Assessment Protocols</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Phase 2 -->
+                    <div class="group flex flex-col items-center md:items-start">
+                        <div
+                            class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-background-light dark:bg-background-dark border-4 border-primary/20 group-hover:border-primary transition-colors shadow-xl scale-110 ring-4 ring-primary/10">
+                            <span class="text-xl font-bold text-primary">2</span>
+                        </div>
+                        <div
+                            class="w-full rounded-xl border-2 border-primary bg-white dark:bg-slate-800 p-6 shadow-lg transition-all hover:shadow-xl md:h-full relative overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 bg-primary px-4 py-1 text-[10px] font-bold uppercase text-background-dark rounded-bl-lg">
+                                Premier Facility
+                            </div>
+                            <div class="mb-4 flex items-center gap-2 text-primary">
+                                <span class="material-symbols-outlined">medical_services</span>
+                                <span class="text-xs font-bold uppercase tracking-widest">Clinical Immersion</span>
+                            </div>
+                            <h3 class="mb-2 text-xl font-bold text-slate-900 dark:text-slate-100">Phase 2: Clinical
+                                Training</h3>
+                            <p class="mb-4 text-sm font-semibold text-primary">In-Person Hands-On (New York City)</p>
+                            <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base">group</span>
+                                    <span>Ultra-Small Group Training (Max 4:1 Ratio)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-base">person_celebrate</span>
+                                    <span>Live Models Provided by NYFAF</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base">location_on</span>
+                                    <span>Premium Medical Suite in Manhattan, NYC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Phase 3 -->
+                    <div class="group flex flex-col items-center md:items-start">
+                        <div
+                            class="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-background-light dark:bg-background-dark border-4 border-primary/20 group-hover:border-primary transition-colors shadow-xl">
+                            <span class="text-xl font-bold text-primary">3</span>
+                        </div>
+                        <div
+                            class="w-full rounded-xl border border-primary/10 bg-white/50 dark:bg-slate-800/50 p-6 shadow-sm backdrop-blur-sm transition-all hover:shadow-md md:h-full">
+                            <div class="mb-4 flex items-center gap-2 text-primary">
+                                <span class="material-symbols-outlined">workspace_premium</span>
+                                <span class="text-xs font-bold uppercase tracking-widest">Professional Milestone</span>
+                            </div>
+                            <h3 class="mb-2 text-xl font-bold text-slate-900 dark:text-slate-100">Phase 3: Certification
+                            </h3>
+                            <p class="mb-4 text-sm font-semibold text-primary">Official Recognition</p>
+                            <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base">verified</span>
+                                    <span>Certificate of Training in Aesthetic Injectable Procedures</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base">military_tech</span>
+                                    <span>Validated Clinical Competency Badge</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base">trending_up</span>
+                                    <span>Post-Course Professional Support Access</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Clarification Box -->
+            <section class="mx-auto max-w-5xl px-4 pb-20">
+                <div
+                    class="rounded-xl bg-slate-900 p-8 dark:bg-slate-800 border border-primary/20 shadow-2xl relative overflow-hidden group">
+                    <div
+                        class="absolute -right-10 -bottom-10 opacity-10 transition-transform group-hover:scale-110 duration-500">
+                        <span class="material-symbols-outlined text-[200px] text-primary">info</span>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                            <div class="max-w-2xl">
+                                <h4 class="mb-3 flex items-center gap-2 text-xl font-bold text-primary">
+                                    <span class="material-symbols-outlined">warning</span>
+                                    Important Clarifications
+                                </h4>
+                                <p class="text-slate-300 leading-relaxed">
+                                    All participants must be licensed medical professionals (MD, DO, NP, PA, or RN) with
+                                    an active license in their respective state. All injection materials, products, and
+                                    live models for Phase 2 are fully provided by NYFAF. No outside models or products
+                                    are permitted for safety and liability reasons.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <button
+                                    class="flex items-center justify-center gap-2 rounded-lg bg-primary/20 border border-primary/30 px-6 py-3 text-sm font-bold text-primary hover:bg-primary/30 transition-all">
+                                    View Prerequisites
+                                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+                                </button>
+                                <a class="text-center text-xs text-slate-400 underline hover:text-primary transition-colors"
+                                    href="#">Download Syllabus (PDF)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Simple Footer -->
+        <footer class="border-t border-primary/10 bg-white dark:bg-background-dark py-8 px-4 text-center">
+            <div class="flex justify-center gap-6 mb-4">
+                <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined">language</span></a>
+                <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined">mail</span></a>
+                <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined">call</span></a>
+            </div>
+            <p class="text-xs text-slate-500">© 2024 New York Facial Aesthetics Foundation. Licensed Medical Training
+                Facility.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

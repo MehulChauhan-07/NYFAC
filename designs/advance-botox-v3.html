@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ADV — Advanced BOTOX® &amp; Dermal Filler Training | NYFAF</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+        }
+
+        .gold-border {
+            border: 1px solid rgba(236, 91, 19, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+    <!-- Top Navigation Bar -->
+    <nav
+        class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <span class="material-symbols-outlined text-4xl">medical_services</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="text-xl font-black tracking-tighter leading-none dark:text-white uppercase">NYFAF</span>
+                        <span class="text-[10px] tracking-widest uppercase text-slate-500 dark:text-slate-400">Facial
+                            Aesthetics Forum</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-wider"
+                        href="#">Advanced Training</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-wider"
+                        href="#">Curriculum</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-wider"
+                        href="#">Pricing</a>
+                    <button
+                        class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-sm uppercase tracking-widest hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20">
+                        Apply Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative w-full overflow-hidden bg-background-dark py-24 lg:py-32">
+        <div class="absolute inset-0 opacity-40">
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/80 to-transparent z-10">
+            </div>
+            <img class="w-full h-full object-cover" data-alt="Professional clinical setting with medical equipment"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKU-9ZCcRQ23qYYQR3dxiw6Ec40ZlbJAmZMGPSSerApkz56cK2HCZHf9eoUmzny0LCIJthRzL0cBEZhe6UAQwlXWFQRDvR5YPKwDIW8aXJSjO23FlUzfPZK6obVh8nhjzX4hsdWaDHZtf8Fu-BdWpjQFTf713E-_tPblxr3n73ivn6YRlKMBam-ZYefw5q_KurEtFp8G9aLgmrWRqr0E5DU_ZmbET1Ih_NDF5LprejKKWm6naj8sRg-P7-5XxE0nrdcUu-yw982Sk0" />
+        </div>
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+                    <span class="material-symbols-outlined text-sm">verified</span> Elite Certification
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black text-white leading-[1.1] tracking-tight mb-6 uppercase">
+                    ADV — Advanced <br />
+                    <span class="text-primary">BOTOX® &amp; Dermal Filler</span> Training
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-10 max-w-2xl">
+                    Master complex injectable techniques and advanced facial mapping in the heart of NYC. Designed
+                    exclusively for licensed MDs, DDSs, and NPs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button
+                        class="flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform shadow-xl shadow-primary/30 uppercase tracking-wide">
+                        Apply for Advanced Training
+                    </button>
+                    <button
+                        class="flex items-center justify-center gap-2 bg-white/5 border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg backdrop-blur-sm hover:bg-white/10 transition-all uppercase tracking-wide">
+                        View Basic Certification
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Stats/Prerequisite Bar -->
+    <section class="relative z-30 -mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div
+                class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-2xl border-t-4 border-primary flex items-center gap-5">
+                <div class="bg-primary/10 p-3 rounded-lg text-primary">
+                    <span class="material-symbols-outlined text-3xl">payments</span>
+                </div>
+                <div>
+                    <p class="text-xs uppercase font-bold text-slate-500 tracking-widest">Investment</p>
+                    <p class="text-2xl font-black text-slate-900 dark:text-white">$1,950 USD</p>
+                </div>
+            </div>
+            <div
+                class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-2xl border-t-4 border-primary flex items-center gap-5">
+                <div class="bg-primary/10 p-3 rounded-lg text-primary">
+                    <span class="material-symbols-outlined text-3xl">assignment_late</span>
+                </div>
+                <div>
+                    <p class="text-xs uppercase font-bold text-slate-500 tracking-widest">Prerequisite</p>
+                    <p class="text-2xl font-black text-slate-900 dark:text-white">Basic Certification</p>
+                </div>
+            </div>
+            <div
+                class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-2xl border-t-4 border-primary flex items-center gap-5">
+                <div class="bg-primary/10 p-3 rounded-lg text-primary">
+                    <span class="material-symbols-outlined text-3xl">groups</span>
+                </div>
+                <div>
+                    <p class="text-xs uppercase font-bold text-slate-500 tracking-widest">Format</p>
+                    <p class="text-2xl font-black text-slate-900 dark:text-white">Elite Small Batches</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Course Overview -->
+    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row gap-16 items-center">
+            <div class="flex-1 space-y-8">
+                <div class="space-y-4">
+                    <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight text-slate-900 dark:text-white">
+                        Elite Practitioner <br /><span class="text-primary">Mastery Program</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Designed specifically for MDs, DDSs, and NPs with prior injectable experience. This program
+                        emphasizes precision, advanced anatomy, and complex treatment areas that separate standard
+                        providers from elite aesthetic artists.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex gap-4">
+                        <span class="material-symbols-outlined text-primary">biotech</span>
+                        <div>
+                            <h4 class="font-bold dark:text-white">Advanced Anatomy</h4>
+                            <p class="text-sm text-slate-500">Deep tissue mapping and vessel identification.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="material-symbols-outlined text-primary">precision_manufacturing</span>
+                        <div>
+                            <h4 class="font-bold dark:text-white">Precision Focus</h4>
+                            <p class="text-sm text-slate-500">Micro-droplet techniques for natural results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 w-full">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+                    <img class="w-full aspect-video object-cover"
+                        data-alt="Doctor performing precision facial mapping on a model"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKOT5r5BvHwRxMIdEhtJ874EGX29FQWgV-0-v8pCDnky7MwLLsfcgkVi0OZn7Ezgu6eZIgs5geI-5gQ54tNsyzaVM4-X9TVQUls8XWds3y2u7lLrSVKBacU0X-xZ6LMYDyritqajVB42yCR1Ke7oASFOXxgrVFYw420-nEl2VXsA-ufpVHIUCU-jdbEZxOZOhkpBvA2VqQf8X5aIkbgle6rLMmAXHAH_79nKlaKg8lzODymdu9mqRoWDVgN9vme1StpRBgtJZu9mar" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Curriculum Grid -->
+    <section class="py-24 bg-slate-100 dark:bg-background-dark/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight dark:text-white mb-4">Advanced
+                    Curriculum</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Beyond the basics: mastering the most challenging facial
+                    regions and complications.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Module 1 -->
+                <div
+                    class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
+                    <div
+                        class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                        <span class="material-symbols-outlined">layers</span>
+                    </div>
+                    <h3 class="text-xl font-bold dark:text-white mb-3">3D Volumization</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Advanced facial mapping and multi-layer structural
+                        restoration.</p>
+                </div>
+                <!-- Module 2 -->
+                <div
+                    class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
+                    <div
+                        class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                        <span class="material-symbols-outlined">face_5</span>
+                    </div>
+                    <h3 class="text-xl font-bold dark:text-white mb-3">Complex Regions</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Precision techniques for tear troughs, jawline,
+                        and temple restoration.</p>
+                </div>
+                <!-- Module 3 -->
+                <div
+                    class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
+                    <div
+                        class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                        <span class="material-symbols-outlined">brush</span>
+                    </div>
+                    <h3 class="text-xl font-bold dark:text-white mb-3">Aesthetic Artistry</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Refined combination treatments for harmonious
+                        full-face rejuvenation.</p>
+                </div>
+                <!-- Module 4 -->
+                <div
+                    class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
+                    <div
+                        class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                        <span class="material-symbols-outlined">health_and_safety</span>
+                    </div>
+                    <h3 class="text-xl font-bold dark:text-white mb-3">Complication Mastery</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Advanced protocol for identifying and resolving
+                        filler emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hands-On Experience -->
+    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-background-dark rounded-[2rem] overflow-hidden flex flex-col lg:flex-row">
+            <div class="flex-1 p-12 lg:p-20 space-y-8">
+                <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight">Hands-On <br /><span
+                        class="text-primary">Clinical Practice</span></h2>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                        <p class="text-slate-300 text-lg">Supervised live model practice with real complex cases.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                        <p class="text-slate-300 text-lg">Small elite batches (maximum 4 students) for individual expert
+                            guidance.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                        <p class="text-slate-300 text-lg">Direct feedback from NYC's leading aesthetic injectors.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 min-h-[400px]">
+                <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    data-alt="Medical professional practicing on a live model in a clinic"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-yYcKxDW2Hk-wJPDA9ChgiTN6GLiiBGQQbl1v9gbtAT4WjU7-yMiihKvQ0503EdB0hlNM-qaXVwNnPfkqCYFLfmUkHb_BM7YUlgnKMbabbwk12QCTydd7Nxy5r4VbvWzaLNDEL1E7jEkiBbBxjtRYn0_Su95AK3OlAk_xb7ZJXAT4pI2UQuBTCi4TOPJPwBBqsvn83iAc-dNl0PwtXieKsTkXT1zyq1syE3NFFwfzlyqBYC_OFjbLrsJEwkXRn1DPQt_Xgu5xCdWJ" />
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight dark:text-white mb-12">The Investment
+            </h2>
+            <div
+                class="bg-background-light dark:bg-background-dark p-12 rounded-[2rem] border-2 border-primary shadow-2xl relative overflow-hidden">
+                <div
+                    class="absolute top-0 right-0 bg-primary text-white px-8 py-2 font-bold text-xs uppercase tracking-widest -rotate-0 rounded-bl-xl">
+                    Elite Tier
+                </div>
+                <div class="mb-8">
+                    <span class="text-6xl font-black dark:text-white">$1,950</span>
+                    <span class="text-slate-500 font-bold ml-2">USD</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 text-left max-w-lg mx-auto">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">done_all</span>
+                        <span class="text-slate-600 dark:text-slate-300">All materials included</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">done_all</span>
+                        <span class="text-slate-600 dark:text-slate-300">Live model sessions</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">done_all</span>
+                        <span class="text-slate-600 dark:text-slate-300">Advanced Certification</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">done_all</span>
+                        <span class="text-slate-600 dark:text-slate-300">Post-course support</span>
+                    </div>
+                </div>
+                <button
+                    class="w-full bg-primary text-white py-5 rounded-2xl font-black text-xl uppercase tracking-widest hover:scale-[1.01] transition-transform shadow-xl shadow-primary/40">
+                    Secure Your Enrollment
+                </button>
+                <p class="mt-6 text-sm text-slate-500">Non-refundable deposit required to lock your date. Limited slots
+                    available monthly.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-background-dark text-slate-400 py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-12">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <span class="material-symbols-outlined text-4xl">medical_services</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-black tracking-tighter text-white leading-none uppercase">NYFAF</span>
+                        <span class="text-[10px] tracking-widest uppercase text-slate-500">New York Facial Aesthetics
+                            Forum</span>
+                    </div>
+                </div>
+                <div class="flex gap-8 text-sm font-bold uppercase tracking-widest">
+                    <a class="hover:text-primary transition-colors" href="#">Curriculum</a>
+                    <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-primary transition-colors" href="#">Terms</a>
+                    <a class="hover:text-primary transition-colors" href="#">Contact</a>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-white/5 text-center text-xs tracking-widest uppercase">
+                © 2024 New York Facial Aesthetics Forum. All Rights Reserved. NYC, USA.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

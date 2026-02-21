@@ -1,0 +1,269 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NYFAF - Master Facial Aesthetics in New York City</title>
+    <!-- Tailwind CSS v3 CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'infinite-scroll': 'infinite-scroll 40s linear infinite',
+                    },
+                    keyframes: {
+                        'infinite-scroll': {
+                            from: { transform: 'translateX(0)' },
+                            to: { transform: 'translateX(-100%)' },
+                        }
+                    },
+                    colors: {
+                        "primary": "#d49735",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#201b12",
+                        brand: {
+                            gold: "#d49735",
+                            dark: "#0f172a",
+                            navy: "#1e293b",
+                            lightGold: "#fdf8f0",
+                        },
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        custom: "8px",
+                        "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+    <style data-purpose="custom-utilities">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #d49735 0%, #b37b2a 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-brand-dark font-sans leading-relaxed">
+
+    <!-- END: AboutSection -->
+    <!-- BEGIN: FacultySection -->
+    <section class="py-24 bg-gray-50" id="faculty">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Clinical Excellence</span>
+                <h2 class="text-4xl font-extrabold mt-4 mb-6">
+                    Meet Your Instructors
+                </h2>
+                <div class="w-20 h-1 bg-brand-gold mx-auto mb-6"></div>
+                <p class="text-gray-600">
+                    Learn from world-class aesthetic leaders bridging the
+                    gap between clinical mastery and rigorous anatomical
+                    science.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Olga -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm flex flex-col md:flex-row gap-8">
+                    <img alt="Olga Klempner"
+                        class="w-full md:w-64 h-80 object-cover rounded-xl grayscale hover:grayscale-0 transition duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw2ReSnwudtwZRUyidrZ6eIh4HabP4VM_wcnA4lKUDQRYzm7NgwRyKMNfWOBroihveCBzN0m7vSu8RuYB4sBuKm1MnJ4u028f7UGpyTXEwn4J2xb0X9cnZAzZaiYuyM8ozSWn7_alO9duDx8k4t08bbABLA548zfvBU8yvrhmLrpsERaswskpyFLhzfWp8QlRBg-03ZtI5LMF0hEMJM72s_NNlGWJbT3wn_myzl5-7iFJ-J9SzZG-BeFBxxIYS7xssvApzvTuhbfXb" />
+                    <div>
+                        <span
+                            class="text-[10px] font-bold uppercase text-brand-gold bg-brand-gold/10 px-2 py-0.5 rounded">RN
+                            | Aesthetic Injector</span>
+                        <h3 class="text-2xl font-bold mt-2">
+                            Olga Klempner, RN
+                        </h3>
+                        <p class="text-brand-gold font-medium text-sm mb-4">
+                            Registered Nurse | Clinical Educator
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <svg class="w-5 h-5 text-brand-gold shrink-0" fill="currentColor" viewbox="0 0 20 20">
+                                    <path
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z">
+                                    </path>
+                                </svg>
+                                <span>Focusing on surgical-grade precision
+                                    and advanced risk awareness.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <svg class="w-5 h-5 text-brand-gold shrink-0" fill="currentColor" viewbox="0 0 20 20">
+                                    <path
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z">
+                                    </path>
+                                </svg>
+                                <span>Signature teaching style that
+                                    prioritizes tactile feedback.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Oleg -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm flex flex-col md:flex-row gap-8">
+                    <img alt="Dr. Oleg Klempner"
+                        class="w-full md:w-64 h-80 object-cover rounded-xl grayscale hover:grayscale-0 transition duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBG-3a9xyhKMZXz6A0y1rFEwMFcQlzpApjr_f_imSt9hIiQY4diW-gVqRi56et9UWSV-lq5M8n7QBzvIdR_oKgIsA7xAyWShQssK6NOHQrn4fHcpfK0rmZpkXZVIvkYE8EguayTQSXbZCG4XEhPU5rIDx7h-dVqElgExdsi_ei1BYBq_M3Is2KCYp0G0phYIcb8tdtLROIcfbX2t2ZP5Q28z2eM2YXjhSIqTuBq-q6y-Dw-YeMEzDNJfnZwOHNBFD3h28BPf5NqA3g" />
+                    <div>
+                        <span
+                            class="text-[10px] font-bold uppercase text-brand-gold bg-brand-gold/10 px-2 py-0.5 rounded">DDS
+                            | Anatomy Specialist</span>
+                        <h3 class="text-2xl font-bold mt-2">
+                            Dr. Oleg Klempner, DDS
+                        </h3>
+                        <p class="text-brand-gold font-medium text-sm mb-4">
+                            Doctor of Dental Surgery | Anatomy Expert
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <svg class="w-5 h-5 text-brand-gold shrink-0" fill="currentColor" viewbox="0 0 20 20">
+                                    <path
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z">
+                                    </path>
+                                </svg>
+                                <span>Deep expertise in deep-tissue facial
+                                    anatomy and vascular mapping.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <svg class="w-5 h-5 text-brand-gold shrink-0" fill="currentColor" viewbox="0 0 20 20">
+                                    <path
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z">
+                                    </path>
+                                </svg>
+                                <span>Specialized injection planning based on
+                                    individual skeletal structure.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Combined Advantage -->
+            <div class="mt-16 bg-brand-dark rounded-3xl p-12 text-white relative overflow-hidden">
+                <div class="absolute right-0 top-0 opacity-10">
+                    <svg class="w-64 h-64" fill="currentColor" viewbox="0 0 24 24">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="max-w-3xl">
+                    <div
+                        class="inline-block border border-brand-gold/30 text-brand-gold text-[10px] uppercase font-bold px-3 py-1 rounded mb-6">
+                        The Elite Synergy
+                    </div>
+                    <h3 class="text-3xl font-bold mb-6">
+                        Combined Teaching Advantage
+                    </h3>
+                    <p class="text-gray-400 mb-8 text-lg">
+                        Experience the unique convergence of
+                        <span class="text-white italic">Nursing Precision</span>
+                        and
+                        <span class="text-white italic">Dental Anatomy Expertise</span>. Our dual-instructor approach
+                        bridges the gap
+                        between surface-level aesthetics and deep-tissue
+                        structural integrity.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <h5 class="text-brand-gold font-bold mb-2">
+                                Structural Foundation
+                            </h5>
+                            <p class="text-sm text-gray-500">
+                                Deep understanding of facial bone structure
+                                provided by Dr. Oleg's surgical background.
+                            </p>
+                        </div>
+                        <div>
+                            <h5 class="text-brand-gold font-bold mb-2">
+                                Technical Delivery
+                            </h5>
+                            <p class="text-sm text-gray-500">
+                                Olga's refined injection techniques ensure
+                                smooth delivery and aesthetic results.
+                            </p>
+                        </div>
+                        <div>
+                            <h5 class="text-brand-gold font-bold mb-2">
+                                Total Competence
+                            </h5>
+                            <p class="text-sm text-gray-500">
+                                A comprehensive 360-degree education
+                                covering patient assessment to post-care.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: FacultySection -->
+
+    <!-- BEGIN: Footer -->
+    <footer class="bg-white py-12 border-t border-gray-100">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="bg-brand-gold p-1.5 rounded">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewbox="0 0 24 24">
+                        <path
+                            d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 15l-4-4h8l-4 4zM7 7h10v2H7V7z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="font-bold text-lg uppercase tracking-tight">NYFAF Institute</span>
+            </div>
+            <div class="flex gap-8 text-sm text-gray-500 font-medium">
+                <a class="hover:text-brand-gold transition" href="#">Privacy Policy</a>
+                <a class="hover:text-brand-gold transition" href="#">Terms of Service</a>
+                <a class="hover:text-brand-gold transition" href="#">Contact NYC Office</a>
+            </div>
+            <div class="text-xs text-gray-400">
+                © 2026 New York Facial Aesthetics Mentorship. All Rights
+                Reserved. Licensed Medical Education.
+            </div>
+        </div>
+    </footer>
+    <!-- END: Footer -->
+    <!-- Floating WhatsApp Widget -->
+    <a class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center"
+        href="https://wa.me/123456789">
+        <span class="material-symbols-outlined text-3xl">chat</span>
+        <span
+            class="absolute -top-2 -left-2 bg-red-500 text-[10px] font-bold px-2 py-0.5 rounded-full animate-pulse uppercase">Online</span>
+    </a>
+</body>
+
+</html>
